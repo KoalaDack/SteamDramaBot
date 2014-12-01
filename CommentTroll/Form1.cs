@@ -40,7 +40,7 @@ namespace CommentTroll
             CookC = new CookieContainer(); //flush it
             CookC.Add(new Cookie("sessionid", SessionID, "/", "steamcommunity.com"));
             CookC.Add(new Cookie("steamLogin", SteamLogin, "/", "steamcommunity.com"));
-            CookC.Add(new Cookie("steamCC_50_139_116_236", "US", "/", "steamcommunity.com"));
+            CookC.Add(new Cookie("steamCC_127_0_0_1", "US", "/", "steamcommunity.com"));
             //REQUIRED: Take IP, and convert dots to _ then put it in front of "steamCC_" and set the value to a country code
             //EG: 127.0.0.1 -> steamCC_127_0_0_1 = US
 
