@@ -46,22 +46,33 @@ namespace CommentTroll
 
             ArrayList u1 = GetUsers(textBox1.Text);
 
-            int count = 0;
+            label6.Text = "Posting...";
+            label3.Text = u1.Count.ToString();
 
+            int count = 0;
+            int i = 1;
             foreach(String User in u1)
             {
                 String Spun = parseSpintax(r, Comment);
 
+                label6.Text = "Posting (" + i + " / " + u1.Count + ")...";
                 if (PostComment(Spun, User, SessionID))
                 {
+                    label6.Text = "Posted (" + i + " / " + u1.Count + ")";
                     count += 1;
                     label2.Text = count.ToString();
                     this.Refresh();
-                    Application.DoEvents();
                 }
+                else
+                {
+                    label6.Text = "Post failed. (" + i + " / " + u1.Count + ")";
+                }
+                i++;
+                Application.DoEvents();
             }
 
-            MessageBox.Show("Done!");
+            label6.Text = "Waiting...";
+            MessageBox.Show("Done! (" + Math.Round((float)count / (float)u1.Count, 2) + "% Post Rate)");
         }
 
 
@@ -81,11 +92,13 @@ namespace CommentTroll
             String MemberList = "";
             for (int p = 1; p <= pages; p++) //Loop through all pages and smash them together. Very shitty
             {
+                label6.Text = "Getting users (" + p + " / " + pages + ")...";
                 MemberList += wc.DownloadString(GroupPageURL + "/memberslistxml/?xml=1&p=" + p);
+                Application.DoEvents();
             }
 
 
-            Regex UserRegex = new Regex(@"7656[0-9]{13}", RegexOptions.None);
+            Regex UserRegex = new Regex(@"7656[0-9]{13}", RegexOptions.None); //Somehow, it works.
             ArrayList retBuffer = new ArrayList();
             int i = 0;
  
@@ -156,8 +169,8 @@ namespace CommentTroll
             request.ContentType = "application/x-www-form-urlencoded; charset=UTF-8";
             //request.Host is set automatically
             request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0";
-            request.Referer = string.IsNullOrEmpty(referer) ? "http://steamcommunity.com/id/bobthestroodle" : referer;
-            request.Timeout = 50000; //Timeout after 50 seconds
+            request.Referer = string.IsNullOrEmpty(referer) ? "http://steamcommunity.com/id/_kd2" : referer;
+            request.Timeout = 10000; //Timeout after 10 seconds
 
             if (ajax)
             {
@@ -206,6 +219,16 @@ namespace CommentTroll
                 return parseSpintax(rand, s);
             }
             else { return s; }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Application.DoEvents();
         }
 
     }
