@@ -16,6 +16,6 @@ This is {randomized|random|spintax}
 Finding # of possibilites:
 
         This {is|was|can be|might be} {randomized|random|spintax} {here|text}
-              ^ 4 possibilites           ^ 3 possibilites        ^ 2 possibilites
+                 ^ 4 possibilites           ^ 3 possibilites        ^ 2 possibilites
         
 (4 * 3 * 2) = 24 different comments!
