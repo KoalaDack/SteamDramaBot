@@ -72,7 +72,7 @@ namespace CommentTroll
             }
 
             label6.Text = "Waiting...";
-            MessageBox.Show("Done! (" + Math.Round((float)count / (float)u1.Count, 2) + "% Post Rate)");
+            MessageBox.Show("Done! (" + Math.Round(( (float)count / (float)u1.Count) * 100, 2) + "% Post Rate)");
         }
 
 
