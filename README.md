@@ -9,7 +9,7 @@ Find your sessionid and steamlogin using a cookie viewer.
 
 This is {randomized|random|spintax}
 
- 
+-
 
 1/3 chance: This is randomized
 
@@ -17,7 +17,7 @@ This is {randomized|random|spintax}
 
 1/3 chance: This is spintax
 
- 
+-
 
 Finding # of possibilites:
 
