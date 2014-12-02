@@ -6,6 +6,7 @@ Find your sessionid and steamlogin using a cookie viewer.
 
 
 ----Spintax----
+
 This is {randomized|random|spintax}
 
 1/3 chance: This is randomized
