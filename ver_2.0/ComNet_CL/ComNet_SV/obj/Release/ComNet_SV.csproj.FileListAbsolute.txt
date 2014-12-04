@@ -1,0 +1,7 @@
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Release\ComNet_SV.exe.config
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Release\ComNet_SV.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Release\ComNet_SV.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Release\Lidgreen.Network.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Release\Lidgreen.Network.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\obj\Release\ComNet_SV.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\obj\Release\ComNet_SV.pdb

@@ -12,18 +12,22 @@ namespace ComNet_SV
 {
     public class XML
     {
-        public static void load()
+        private static XmlTextWriter _file;
+        public void load()
         {
 
-            if ( !File.Exists("statistics.xml") )
+            if ( !File.Exists("stats.xml") )
             {
-                createXML(1);
+                Debug.PrintError("stats.xml does not exist, creating!");
+                createXML("stats.xml", "stats");
             }
 
             if (!File.Exists("comments.xml"))
             {
-                createXML(2);
+                Debug.PrintError("comments.xml does not exist, creating!");
+                createXML("comments.xml", "stats");
             }
+            Debug.PrintError("Please note that the XML feature is currently not finished.");
         }
 
         private static List<string> getTree(string file, string tree)
@@ -39,27 +43,27 @@ namespace ComNet_SV
             return _child; 
         }
 
-        private static void createXML(int lane)
+        public static void addXML(string file, string node, string value)
         {
-            XmlTextWriter _file = new XmlTextWriter("statistics.xml", System.Text.Encoding.UTF8);
-
-            _file.WriteStartDocument(true);
-            _file.Formatting = Formatting.Indented;
-            _file.Indentation = 2;
-                switch (lane)
-                {
-                    case 1:
-                        _file.WriteStartElement("Stats");
-                        break;
-                    case 2:
-                        _file.WriteStartElement("Comments");
-                        break;
-                }
-            _file.WriteEndElement();
-            _file.WriteEndDocument();
-            _file.Close();
+            // TODO: Finish later ( taking way to fucking long )
         }
-
+        private static XmlTextWriter saveXML(string file)
+        {
+           XmlTextWriter writer = new XmlTextWriter( file, System.Text.Encoding.UTF8);
+           return writer;
+        }
+        private static void createXML(string file, string element)
+        {
+                _file = new XmlTextWriter(file, System.Text.Encoding.UTF8);
+                _file.WriteStartDocument(true);
+                _file.Formatting = Formatting.Indented;
+                _file.Indentation = 2;
+                _file.WriteStartElement(element, element);
+                _file.WriteEndElement();
+                _file.WriteEndDocument();
+                _file.Close();
+                //addXML("comments.xml", "comments", "test");
+        }
         private static void createNode(XmlTextWriter _file, string node, string value)
         {
             _file.WriteStartElement("node");

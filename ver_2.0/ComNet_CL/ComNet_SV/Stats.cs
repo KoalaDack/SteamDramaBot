@@ -8,10 +8,14 @@ namespace ComNet_SV
 {
     public class Stats
     {
+        /**
+         * TODO: FINISH THIS
+         * 
         //Total of comments for current session, NS stands for NOT SAVED. S stands for SAVED.
         public static int totalCommentsNS;
 
         //Read saved data
+        
         public static int totalCommentsS = gss("tc");
         public static int totalProfiles = gss("tp");
         public static int totalCharacters = gss("tch");
@@ -45,6 +49,7 @@ namespace ComNet_SV
             }
 
         }
+         **/
 
     }
 }

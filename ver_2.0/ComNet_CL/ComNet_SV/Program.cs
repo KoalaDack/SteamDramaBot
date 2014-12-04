@@ -9,12 +9,14 @@ namespace ComNet_SV
     class Program
     {
         private static Server netServer;
+        private static XML xml;
         private static Program main;
         static void Main(string[] args)
         {
             //Start instances of classes
-            netServer = new Server();
             main = new Program();
+            netServer = new Server();
+            xml = new XML();
             main.start();
 
         }
@@ -22,10 +24,11 @@ namespace ComNet_SV
         /**
          *  Starts the server, the comment generator, and all the other stuff
          **/
+
         void start()
         {
-            netServer.start("master", 500, 1212);
-            XML.load();
+            //WARNING: Must start the server last!
+            netServer.start("master", 500, 1212);  
         }
 
     }

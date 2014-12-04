@@ -1,0 +1,5 @@
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\Lidgreen.Network\bin\Release\Lidgreen.Network.exe.config
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\Lidgreen.Network\bin\Release\Lidgreen.Network.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\Lidgreen.Network\bin\Release\Lidgreen.Network.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\Lidgreen.Network\obj\Release\Lidgreen.Network.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\Lidgreen.Network\obj\Release\Lidgreen.Network.pdb

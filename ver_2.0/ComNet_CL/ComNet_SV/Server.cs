@@ -11,7 +11,6 @@ namespace ComNet_SV
 {
     public class Server
     {
-        private static NetPeer peer;
         private static NetConfiguration config;
         private static NetServer server;
         private static NetBuffer readBuffer;
@@ -27,7 +26,7 @@ namespace ComNet_SV
             server.Start();
             //Create a buffer.
             readBuffer = server.CreateBuffer();
-            Debug.Print("Server is running! press escape to exit server", ConsoleColor.Blue);
+            Debug.PrintEvent("Server is running! press escape to exit server");
             consoleIdle( true );
         }
 
@@ -42,7 +41,7 @@ namespace ComNet_SV
                     switch (type)
                     {
                         case NetMessageType.DebugMessage:
-                            Debug.Print(readBuffer.ReadString(), ConsoleColor.White);
+                            Debug.PrintDebug(readBuffer.ReadString());
                             break;
                         case NetMessageType.ConnectionApproval:
                             Debug.Print(string.Format("Connection Approval from {0}: {1}",sender, readBuffer.ReadString()), ConsoleColor.DarkMagenta);

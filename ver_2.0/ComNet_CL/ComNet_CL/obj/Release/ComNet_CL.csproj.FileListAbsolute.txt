@@ -1,0 +1,8 @@
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\bin\Release\ComNet_CL.exe.config
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\bin\Release\ComNet_CL.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\bin\Release\ComNet_CL.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\bin\Release\Lidgreen.Network.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\bin\Release\Lidgreen.Network.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\obj\Release\ComNet_CL.csprojResolveAssemblyReference.cache
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\obj\Release\ComNet_CL.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_CL\obj\Release\ComNet_CL.pdb

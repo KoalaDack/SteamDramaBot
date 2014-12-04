@@ -1,0 +1,8 @@
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Debug\ComNet_SV.exe.config
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Debug\ComNet_SV.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Debug\ComNet_SV.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Debug\Lidgreen.Network.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\bin\Debug\Lidgreen.Network.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\obj\Debug\ComNet_SV.exe
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\obj\Debug\ComNet_SV.pdb
+E:\GitHub\SteamDramaBot\ver_2.0\ComNet_CL\ComNet_SV\obj\Debug\ComNet_SV.csprojResolveAssemblyReference.cache
