@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>37052b34-fa1c-458f-9128-7c2509a4feb8</ProjectGuid>
+    <ProjectGuid>{8E5F4427-DF4C-4F14-A9B1-CE464FFAC0F0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lidgreen.Network</RootNamespace>
@@ -41,6 +41,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NetBase.cs" />
+    <Compile Include="NetBase.Recycling.cs" />
+    <Compile Include="NetBase.SimulateLag.cs" />
+    <Compile Include="NetBase.Statistics.cs" />
+    <Compile Include="NetBitWriter.cs" />
+    <Compile Include="NetBuffer.cs" />
+    <Compile Include="NetBuffer.Peek.cs" />
+    <Compile Include="NetBuffer.Read.cs" />
+    <Compile Include="NetBuffer.Write.cs" />
+    <Compile Include="NetChecksum.cs" />
+    <Compile Include="NetClient.cs" />
+    <Compile Include="NetConfiguration.cs" />
+    <Compile Include="NetConnection.Approval.cs" />
+    <Compile Include="NetConnection.cs" />
+    <Compile Include="NetConnection.Fragmentation.cs" />
+    <Compile Include="NetConnection.Latency.cs" />
+    <Compile Include="NetConnection.Reliability.cs" />
+    <Compile Include="NetConnection.Statistics.cs" />
+    <Compile Include="NetConnection.StringTable.cs" />
+    <Compile Include="NetConstants.cs" />
+    <Compile Include="NetDiscovery.cs" />
+    <Compile Include="NetEnums.cs" />
+    <Compile Include="NetException.cs" />
+    <Compile Include="NetFrequencyCounter.cs" />
+    <Compile Include="NetLog.cs" />
+    <Compile Include="NetMessage.cs" />
+    <Compile Include="NetPeer.cs" />
+    <Compile Include="NetPool.cs" />
+    <Compile Include="NetQueue.cs" />
+    <Compile Include="NetRandom.cs" />
+    <Compile Include="NetServer.cs" />
+    <Compile Include="NetTime.cs" />
+    <Compile Include="NetUtility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

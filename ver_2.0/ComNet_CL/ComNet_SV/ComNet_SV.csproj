@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>a7ff2935-861a-4099-95c9-269020f96849</ProjectGuid>
+    <ProjectGuid>{6943208B-FF08-4113-A880-1415DB2B43BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ComNet_SV</RootNamespace>

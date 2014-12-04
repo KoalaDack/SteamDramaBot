@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Lidgren.Network;
+
 namespace ComNet_CL
 {
-    class Program
+    public class Network
     {
-        static void Main(string[] args)
-        {
-
-        }
+       
     }
 }
