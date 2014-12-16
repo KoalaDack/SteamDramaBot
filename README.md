@@ -14,5 +14,5 @@ As regards to getting banned? Use your common sense.
 
 <h2> Credits </h2>
 
-Hasky
+Hasky,
 _kd
