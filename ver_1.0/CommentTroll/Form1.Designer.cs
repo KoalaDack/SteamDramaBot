@@ -33,7 +33,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -79,23 +78,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "0";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(12, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(378, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "SessionID";
-            // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 64);
+            this.textBox3.Location = new System.Drawing.Point(12, 38);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(378, 50);
+            this.textBox3.Size = new System.Drawing.Size(378, 76);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "SteamLogin";
+            this.textBox3.Text = "SessionID:SteamLogin";
             // 
             // textBox4
             // 
@@ -152,7 +143,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -174,7 +164,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;

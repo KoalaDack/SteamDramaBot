@@ -20,7 +20,8 @@ namespace CommentTroll
 
         String SessionID; //Note that %3D needs to be removed from it!
         String SteamLogin;
-        String Comment;
+        String Comment; 
+        ArrayList Sessions = new ArrayList();
 
         static CookieContainer CookC;
         Random r = new Random(Convert.ToInt32(DateTime.Now.Ticks % int.MaxValue));
@@ -33,14 +34,19 @@ namespace CommentTroll
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SessionID = textBox2.Text;
-            SteamLogin = textBox3.Text;
+
+            string[] SessionList = textBox3.Text.Split('\n');
+            foreach(string sess in SessionList)
+            {
+                string[] SplitSess = sess.Split(':');
+                Session Add = new Session(SplitSess[0], SplitSess[1]);
+                Sessions.Add(Add);
+            }
+
+
+
             Comment = textBox4.Text;
 
-            CookC = new CookieContainer(); //flush it
-            CookC.Add(new Cookie("sessionid", SessionID, "/", "steamcommunity.com"));
-            CookC.Add(new Cookie("steamLogin", SteamLogin, "/", "steamcommunity.com"));
-            CookC.Add(new Cookie("steamCC_127_0_0_1", "US", "/", "steamcommunity.com"));
             //REQUIRED: Take IP, and convert dots to _ then put it in front of "steamCC_" and set the value to a country code
             //EG: 127.0.0.1 -> steamCC_127_0_0_1 = US
 
@@ -53,6 +59,15 @@ namespace CommentTroll
             int i = 1;
             foreach(String User in u1)
             {
+                Session rSession = randSession(Sessions);
+                SessionID = rSession.sessionid;
+                SteamLogin = rSession.steamLogin;
+
+                CookC = new CookieContainer(); //flush it
+                CookC.Add(new Cookie("sessionid", SessionID, "/", "steamcommunity.com"));
+                CookC.Add(new Cookie("stxeamLogin", SteamLogin, "/", "steamcommunity.com"));
+                CookC.Add(new Cookie("steamCC_127_0_0_1", "US", "/", "steamcommunity.com"));
+
                 String Spun = parseSpintax(r, Comment);
 
                 label6.Text = "Posting (" + i + " / " + u1.Count + ")...";
@@ -62,6 +77,8 @@ namespace CommentTroll
                     count += 1;
                     label2.Text = count.ToString();
                     this.Refresh();
+
+                    System.Threading.Thread.Sleep(5000);
                 }
                 else
                 {
@@ -75,6 +92,11 @@ namespace CommentTroll
             MessageBox.Show("Done! (" + Math.Round(( (float)count / (float)u1.Count) * 100, 2) + "% Post Rate)");
         }
 
+
+        public Session randSession(ArrayList SessionAL)
+        {
+            return (Session)SessionAL[r.Next(0, SessionAL.Count)];
+        }
 
         /// <summary>
         /// Returns all users as an arraylist from group URL
