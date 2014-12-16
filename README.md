@@ -11,3 +11,8 @@ what people might use this tool for.
 We take <b>no responsibility</b> if you get banned for using this, do don't write us emails, we are not Valve. We cannot unban you.
 
 As regards to getting banned? Use your common sense.
+
+<h2> Credits </h2>
+
+Hasky
+_kd
